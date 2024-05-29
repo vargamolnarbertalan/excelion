@@ -4,18 +4,29 @@
 A web controller for Microsoft Excel. I would not call this an API, since you have to write the functions you want to use on the Excel side too. 
 The purpose of this app is to modify data inside Excel through network requests. This enables you to control Excel from third-party applications such as Bitfocus Companion.
 
-## Installation
+## Install
+- Download the latest release and run the installer.
+- Upon completing the installation proccess run the Excelion app that is now added to your program list in Windows.
+> Please note that by doing this, you won't be able to change the default port.
+
+## Or compile
 - Install Python for Windows
 - Install dependencies:
 ```
     pip install Flask python-dotenv xlwings
 ```
+- Compile and run python script:
+```
+    python app.py
+```
+> Please note that by doing this, you can change the default port anytime.
 
-## Port number
+### Alternative run
+Start the **run.bat** file found in the application's directory after installing python and dependencies.
+> Please note that by doing this, you can change the default port anytime.
+
+### Port number
 You can set your preferred port number for the app to run on, just change it in the **.env** file. *Default is 15000*
-
-## Run
-Start the **run.bat** file found in the application's directory.
 
 ## Usage
 The only way to interact with the application is to send HTTP GET requests to it.
