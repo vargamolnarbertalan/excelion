@@ -19,7 +19,7 @@ The only way to interact with the application is to send HTTP GET requests to it
 
 ### Request template:
 **http(s)://server_ip:server_port/modify_excel?filePath=ARG1&scriptName=ARG2**
-- Where **ARG1** is the **path with filename and extension** in Windows format (\\ between directories and filename). Should be something like this: c:\\path\\to\\document.xlsm
+- Where **ARG1** is the **path with filename and extension** in Windows format (\\\ between directories and filename). Should be something like this: c:\\\path\\\to\\\document.xlsm
 - And **ARG2** is the **VBA script name** that is declared in the document - without the () - something like this: MyFavoriteScript
 
 *Example request:*
