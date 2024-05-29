@@ -11,6 +11,9 @@ The purpose of this app is to modify data inside Excel through network requests.
     pip install Flask python-dotenv xlwings
 ```
 
+## Port number
+You can set your preferred port number for the app to run on, just change it in the **.env** file. *Default is 15000*
+
 ## Run
 Start the **run.bat** file found in the application's directory.
 
@@ -23,8 +26,9 @@ The only way to interact with the application is to send HTTP GET requests to it
 - And **ARG2** is the **VBA script name** that is declared in the document - without the () - something like this: MyFavoriteScript
 
 *Example request:*
-*http://192.168.1.64:24529/modify_excel?filePath=c:\\path\\to\\document.xlsm&scriptName=MyFavoriteScript*
+*http://192.168.1.64:15000/modify_excel?filePath=c:\\path\\to\\document.xlsm&scriptName=MyFavoriteScript*
 
-> Works both with .xlsx and .xlsm files.
-> Keep in mind that right now this app only handles VBA methods that do not take parameters.
-> Windows only.
+## Good to know
+- Works both with .xlsx and .xlsm files.
+- Keep in mind that right now this app only handles VBA methods that do not take parameters.
+- Windows only.
