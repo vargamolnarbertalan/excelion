@@ -29,9 +29,10 @@ def modify_excel():
         # wb.save()
         # wb.close()
 
-        return jsonify({"status": "success"})
+        return "OK", 200
     except Exception as e:
-        return jsonify({"status": "error", "message": str(e)}), 500
+        return f"ERROR MSG: {e}", 490
+
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=PORT)
